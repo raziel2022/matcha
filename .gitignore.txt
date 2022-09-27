@@ -1,3 +1,0 @@
-
-#ARCHIVOS A IGNORAR
-*.txt
