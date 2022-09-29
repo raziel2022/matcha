@@ -1,0 +1,132 @@
+body {
+    background-color: #fffbf7;
+}
+
+h1 {
+    color: #025157;
+}
+
+h4 {
+    color: #46484c;
+}
+
+p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+}
+
+.header{
+  	margin: 0px 0px 40px;
+	font-size: 0px;cgit 
+	line-height: 45px;
+	font-family: sans-serif;
+	position: fixed;
+	top: 0;
+	background-color: beige;
+	box-shadow: 0px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  li{
+	  display: inline;
+  }
+
+  header >*{
+	  display: inline-block;
+	  font-size: 16px;
+	  vertical-align: middle;
+	  height: 100%;
+  }
+
+  .logo {
+	  width: 15%;
+  }
+/* los hijos de logo de etiqueta img van a tener el mismo estilo*/
+  .logo > img {
+	  width:50%;
+  }
+  .publish h3 {
+	font-family: "Alegreya", serif;
+	font-size: 40px;
+	line-height: 48px;
+	color: #025157;
+  }
+  .publish > p {
+	font-size: 16px;
+	color: ##343434;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	gap:20;
+	display: flex;
+  }
+  .promo {
+	display: flex;
+	max-width: 70%;
+	margin: 100px auto;
+	align-items: center;
+	gap: 12px;
+  }
+  
+  .video {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .video img {
+	width: 120px;
+	margin-top: 10px;
+  }
+  
+  .publish {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+  }
+  
+
+  .navbar{
+	width: 60%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .actions{
+	  width: 15%;
+    font-weight: 600;
+    text-align: right;
+  }
+  .main{
+	margin-top: 140px;
+	text-align: center;
+  }
+  .menu{
+	font-size: 14px;
+	padding: 25px;
+	color: #025157;
+	font-family: sans-serif;
+
+  }
+  .button{
+	color:white;
+	background-color: #67b54b;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border: 0;
+	border-radius: 5px;
+  }
+
+  .a{
+	color:#67b54b;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin: 0px 10px;
+  }
