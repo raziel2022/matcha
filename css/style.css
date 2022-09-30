@@ -130,3 +130,87 @@ button {
 	font-family: sans-serif;
 	margin: 0px 10px;
   }
+  /*.feature{
+	margin-bottom: 200px;
+	display: grid;
+	height: 600px;
+	/*grid-template-columns: repeat(2, 1fr);*/
+	/*grid-template-rows: repeat(2, 330px);*/
+	/*grid-template-rows: 1fr 1fr;*/
+	/*grid-template-rows: repeat(2, 1fr);*/
+	/*grid-template: repeat(2, 330px) / repeat(2,1fr);
+  }
+
+  /*pseudo clases actua sobre selectores de tipo etiqueta*/
+  /*button:active, button:hover{
+	background-color: blue;
+	cursor: pointer;
+  }*/
+
+  .features {
+	display: flex;
+	background-color:  #025157;
+	padding: 5% 10%;
+	display: grid;
+	grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  }
+  
+  .features .seccion {
+	margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #fff;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	overflow: hidden;
+  }
+  
+  .features .seccion .icono2 {
+	padding: 30px 20px 40px 40px;
+	flex: 1;
+  }
+  
+  .features .seccion .icono2 > * {
+	margin-bottom: 1rem;
+	margin-top: 0;
+  }
+  
+  .features .seccion .icono2 img {
+	width: 50px;
+  }
+  
+  .features .seccion .icono2 h3 {
+	font-size: 24px;
+	color: #343434;
+	font-weight: 400;
+  }
+  
+  .features .seccion .icono2 p {
+	font-size: 16px;
+	color: #7e7e7e;
+	font-weight: 400;
+  }
+  
+  .features .seccion .icono2 a {
+	font-size: 16px;
+	color: #67b54b;
+	font-weight: 600;
+	text-decoration: none;
+  }
+  
+  .features .seccion .logo {
+	flex: 1;
+	width: 40%;
+	position: relative;
+	right: -50px;
+	height: 40%;
+  }
+  
+  .features .seccion .logo figure,
+  .features .seccion .logo img {
+	margin-top: 0;
+	height: 100%;
+  }
