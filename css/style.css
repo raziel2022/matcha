@@ -1,9 +1,15 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap');
+
+
 body {
     background-color: #fffbf7;
 }
 
 h1 {
     color: #025157;
+	font-size: 45px;
 }
 
 h4 {
@@ -23,7 +29,7 @@ button {
 
 .header{
   	margin: 0px 0px 40px;
-	font-size: 0px;cgit 
+	font-size: 0px; 
 	line-height: 45px;
 	font-family: sans-serif;
 	position: fixed;
@@ -58,7 +64,7 @@ button {
   }
   .publish > p {
 	font-size: 16px;
-	color: ##343434;
+	color: #343434;
 	line-height: 1.5;
 	margin-bottom: 20px;
 	gap:20;
@@ -98,13 +104,14 @@ button {
   }
 
   .actions{
-	  width: 15%;
+	width: 15%;
     font-weight: 600;
     text-align: right;
   }
   .main{
 	margin-top: 140px;
 	text-align: center;
+	align-items: center;
   }
   .menu{
 	font-size: 14px;
@@ -163,7 +170,6 @@ button {
 	border: 1px solid #dadada;
 	border-radius: 5px;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	overflow: hidden;
   }
@@ -214,3 +220,74 @@ button {
 	margin-top: 0;
 	height: 100%;
   }
+
+  @media(max-width: 575px){
+	.navbar, .actions {
+		display: none;
+	}
+	.main{
+		margin-top: 80px;
+	}
+	h1{
+		font-size: 25px;
+	}
+	.main img{
+		width: 100%;
+	}
+	.video{
+		width: 100%;
+	}
+
+	.promo{
+		flex-direction: column;
+	}
+	.poster, .video img{
+		width: 100%;
+	}
+	.publish h3{
+		font-size: 25px;
+	}
+	.publish p{
+		line-height: 24px;
+	}
+	.features{
+		/*flex-direction: column;*/
+		grid-template-columns: auto;
+	}
+	.logo{
+		display: none;
+	}
+	
+	
+  }
+
+  @media ((min-width: 576px) and (max-width: 767px )){
+	body{
+		background-color: yellow;
+	}
+	.video img{
+		width: 100%;
+	}
+  }
+
+  @media ((min-width: 768px) and (max-width: 991px )){
+	body{
+		
+	}
+	
+  }
+
+  @media ((min-width: 992px) and (max-width: 1199px )){
+	body{
+		
+	}
+	
+  }
+	
+ 
+  h1, h2, h3, h4, h5, h6{
+	font-family: "Alegreya", sans-serif;
+  }
+ 
+
+ 
