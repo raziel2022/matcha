@@ -1,0 +1,53 @@
+/** colores */
+$dark-green-title: #025157;/* asi se declara una variable*/
+$dark-green-text: #135359;
+$white: #ffffff;
+
+/** fuentes */
+
+$font-title: "Alegreya", sans-serif;
+
+
+/*asi se declara una variable*/
+%base-title{
+    font-family: $font-title;
+    color: $dark-green-title;
+}
+
+%text-card{
+    color: #4a4a4a;
+    font-size: 18px;
+    line-height: 1.5em;
+    min-height: 6em;
+}
+
+%text-card-title{
+    font-size: 24px;
+    color: #4a4a4a;
+    
+}
+
+%text-read-time{
+    color: #979797;
+    font-size: 14px;
+    font-family: "Open-sans", sans-serif;
+}
+
+%text-category{
+    color: #67b54b;
+    font-size: 14px;
+    font-family: "Open-sans", sans-serif;
+}
+
+%text-author{
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+%text-read-more{
+    color: #4a4a4a;
+    font-size: 18px;
+}
+

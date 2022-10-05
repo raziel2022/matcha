@@ -1,0 +1,130 @@
+@use "global" as*; /* le decimo al archivo que vamos a usar, no es necesario poner el guion bajo ni la extension*/
+
+
+.features {
+    .seccion {
+        .logo {
+            flex: 1;
+            width: 40%;
+            position: relative;
+            right: -50px;
+            height: 40%;
+        }
+
+        .icono2{
+            a {
+
+                font-size: 16px;
+                color: #67b54b;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            p {
+                font-size: 16px;
+                color: #7e7e7e;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 24px;
+                color: #343434;
+                font-weight: 400;
+            }
+        }
+    }
+
+   
+}
+
+.blog{
+    background-color: $white;
+    padding: 5% 10%;
+    max-width: unset;
+    /* si queremos definir seria asi, pero ya tenemmos un archivo globarl para hacer esta parte
+    .title{
+        color: #025157;
+        font-family: "Alegreya", sans-serif;
+    }
+    ////////////////////esta forma ya la tenemos definida en el archivo de variables globales pero podemos definirlo aun mas corto ya que anteriomente lo definimos en una clase
+    .title{
+        color: $dark-green-title;
+        font-family: $font-title;
+    }*/
+
+    /* de esta forma queda mejor definida ya que a tenemos como clase global y asi la mandamos a llamar*/
+    .title{
+        @extend %base-title;
+    }
+
+    .process-list{
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process{
+            margin-bottom:  25px;
+            /* de esta forma podemos decir que solo los hijos directos de la clases procces seran afectados por el estilo*/
+             /* asi de esta forma solo decimos que solo los h3 hijos de ese div seran afectados por el estilo*/
+            & > div {
+               
+                & > h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0px;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                & > p{
+                    color: $dark-green-text;
+                    margin-bottom: 0px;
+                }
+
+            }
+            .process-icon{
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    button{
+        height: auto;
+        border-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+
+    .card{
+        .card-title {
+            @extend %text-card-title;
+        }
+        .card-text{
+            @extend %text-card;
+        }
+        .category{
+            @extend %text-category;
+        }
+        .read-time{
+            @extend %text-read-time;
+        }
+        .author{
+            @extend %text-author;
+
+            img{
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .read-more{
+            text-decoration: underline;
+            @extend %text-read-more;
+        }
+    }
+
+}
+

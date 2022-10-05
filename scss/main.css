@@ -1,0 +1,129 @@
+/** colores */
+/* asi se declara una variable*/
+/** fuentes */
+/*asi se declara una variable*/
+.blog .title {
+  font-family: "Alegreya", sans-serif;
+  color: #025157;
+}
+
+.blog .card .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  line-height: 1.5em;
+  min-height: 6em;
+}
+
+.blog .card .card-title {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.blog .card .read-time {
+  color: #979797;
+  font-size: 14px;
+  font-family: "Open-sans", sans-serif;
+}
+
+.blog .card .category {
+  color: #67b54b;
+  font-size: 14px;
+  font-family: "Open-sans", sans-serif;
+}
+
+.blog .card .author {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.blog .card .read-more {
+  color: #4a4a4a;
+  font-size: 18px;
+}
+
+/* le decimo al archivo que vamos a usar, no es necesario poner el guion bajo ni la extension*/
+.features .seccion .logo {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 40%;
+}
+.features .seccion .icono2 a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+.features .seccion .icono2 p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+.features .seccion .icono2 h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+
+.blog {
+  background-color: #ffffff;
+  padding: 5% 10%;
+  max-width: unset;
+  /* si queremos definir seria asi, pero ya tenemmos un archivo globarl para hacer esta parte
+  .title{
+      color: #025157;
+      font-family: "Alegreya", sans-serif;
+  }
+  ////////////////////esta forma ya la tenemos definida en el archivo de variables globales pero podemos definirlo aun mas corto ya que anteriomente lo definimos en una clase
+  .title{
+      color: $dark-green-title;
+      font-family: $font-title;
+  }*/
+  /* de esta forma queda mejor definida ya que a tenemos como clase global y asi la mandamos a llamar*/
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+  /* de esta forma podemos decir que solo los hijos directos de la clases procces seran afectados por el estilo*/
+  /* asi de esta forma solo decimos que solo los h3 hijos de ese div seran afectados por el estilo*/
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin-bottom: 0px;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.blog .card .author img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.blog .card .read-more {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */
