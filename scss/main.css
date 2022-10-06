@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /** colores */
 /* asi se declara una variable*/
 /** fuentes */
-/*asi se declara una variable*/
+/*asi se declara una clase*/
 .blog .title {
   font-family: "Alegreya", sans-serif;
   color: #025157;
@@ -83,6 +84,7 @@
       font-family: $font-title;
   }*/
   /* de esta forma queda mejor definida ya que a tenemos como clase global y asi la mandamos a llamar*/
+  /* &:hover esto seria una pseudoclse que puede ir aninada y cuando se hace una pseudoclase se coloca así con el &: */
 }
 .blog .process-list {
   margin-top: 40px;
@@ -118,6 +120,9 @@
   padding: 12px;
   width: 180px;
   margin-bottom: 15px;
+}
+.blog button:hover {
+  background-color: tomato;
 }
 .blog .card .author img {
   border-radius: 50%;
